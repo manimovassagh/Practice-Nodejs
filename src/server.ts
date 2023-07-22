@@ -1,17 +1,24 @@
-import express from 'express';
-import { Request, Response } from 'express';
-import { getObjects as getPersons } from './supplier/supplyObject';
+const express = require('express');
+
 
 const app = express();
 
 
 app.use(express.static('public'))
-app.get('/test', (req: Request, res: Response) => {
-    res.json(getPersons());
+app.get('/test', (req, res) => {
+    res.json({
+        name: 'John',
+    });
+
+})
+app.get('/user', (req, res) => {
+    res.json({
+        name: 'John',
+    });
 
 })
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log('server started');
 
 })
