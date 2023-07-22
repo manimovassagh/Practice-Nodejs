@@ -1,3 +1,7 @@
 # NodeApp
 # Practice-Nodejs
-# Practice-Nodejs
+do this first
+```
+$ npm i
+```
+
