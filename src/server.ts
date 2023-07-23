@@ -1,17 +1,19 @@
-const express = require('express');
+import express from 'express';
+import { Express,Request, Response} from 'express';
 
 
-const app = express();
+
+const app:Express = express();
 
 
 app.use(express.static('public'))
-app.get('/test', (req, res) => {
+app.get('/test', (req:Request, res:Response) => {
     res.json({
         name: 'John',
     });
 
 })
-app.get('/user', (req, res) => {
+app.get('/user', (req:Request, res:Response) => {
     res.json({
         name: 'John',
     });
