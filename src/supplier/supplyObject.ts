@@ -3,6 +3,9 @@ export interface Person {
     family: string;
 }
 
+
+
+
 export const getObjects: () => Person[] = (): Person[] => {
     const obj = [
         {
